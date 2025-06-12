@@ -1,0 +1,47 @@
+"use client";
+import React, { useState } from "react";
+import { HoveredLink, Menu, MenuItem } from "../components/ui/navbar-menu";
+import { cn } from "@/app/utils/cn";
+
+const Navbar = ({ className }: { className?: string }) => {
+  const [active, setActive] = useState<string | null>(null);
+
+  return (
+    <div
+      className={cn(
+        "fixed top-6 inset-x-0 z-50 flex justify-center",
+        className
+      )}
+    >
+      {/* White rounded background wrapper */}
+      <div className="bg-white border border-gray-200 rounded-full shadow-md px-44">
+        <Menu setActive={setActive}>
+          {/* Home Tab */}
+          <MenuItem setActive={setActive} active={active} item="Home">
+            <div className="p-4">
+              <HoveredLink href="/">Go to Home</HoveredLink>
+            </div>
+          </MenuItem>
+
+          {/* Our Courses Tab */}
+          <MenuItem setActive={setActive} active={active} item="Our Courses">
+            <div className="flex flex-col space-y-2 p-4">
+              <HoveredLink href="/web-dev">Basic Music Theory</HoveredLink>
+              <HoveredLink href="/interface-design"></HoveredLink>
+              <HoveredLink href="/seo">Advanced Composition</HoveredLink>
+              <HoveredLink href="/branding">SongWriting</HoveredLink>
+              <HoveredLink href="/branding">Music Production</HoveredLink>
+            </div>
+          </MenuItem>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Contact us"
+          ></MenuItem>
+        </Menu>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
