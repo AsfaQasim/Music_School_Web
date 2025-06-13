@@ -5,6 +5,7 @@ import Featured_courses from "./components/featured_courses";
 import MusicSchoolTestimonials from "./components/TestimonialCards";
 import Whyschooseus from "./components/whyschooseus";
 import Upcomingwebinar from "./components/upcomingwebinar";
+import Instructors from "./components/instructors";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Whyschooseus/>
       <MusicSchoolTestimonials/>
       <Upcomingwebinar/>
+      <Instructors/>
     </main>
   );
 };
