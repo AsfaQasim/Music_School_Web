@@ -26,18 +26,18 @@ const Navbar = ({ className }: { className?: string }) => {
           {/* Our Courses Tab */}
           <MenuItem setActive={setActive} active={active} item="Our Courses">
             <div className="flex flex-col space-y-2 p-4">
-              <HoveredLink href="/web-dev">Basic Music Theory</HoveredLink>
+              <HoveredLink href="/courses">All Courses</HoveredLink>
               <HoveredLink href="/interface-design"></HoveredLink>
               <HoveredLink href="/seo">Advanced Composition</HoveredLink>
               <HoveredLink href="/branding">SongWriting</HoveredLink>
               <HoveredLink href="/branding">Music Production</HoveredLink>
             </div>
           </MenuItem>
-          <MenuItem
-            setActive={setActive}
-            active={active}
-            item="Contact us"
-          ></MenuItem>
+          <MenuItem setActive={setActive} active={active} item="Contact us">
+            <div className="p-4">
+              <HoveredLink href="/contact">Contact us</HoveredLink>
+            </div>
+          </MenuItem>
         </Menu>
       </div>
     </div>
