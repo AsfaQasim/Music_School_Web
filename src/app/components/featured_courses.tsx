@@ -37,7 +37,7 @@ function FeaturedCourses() {
             <div key={course.id} className="flex justify-center">
               <BackgroundGradient
                 className="flex flex-col rounded-[22px] bg-black dark:bg-zinc-900 
-              overflow-hidden h-full max-w-sm"
+              overflow-hidden h-[105%] max-w-sm"
               >
                 <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
                   <p className="text-lg sm:text-xl text-white mt-4 mb-2 dark:text-neutral-200">
@@ -47,14 +47,7 @@ function FeaturedCourses() {
                     {course.description}
                   </p>
                   <Link href={`/courses/${course.slug}`}>
-                    <Button
-                      className="bg-white dark:bg-black text-black dark:text-white 
-    border border-neutral-200 dark:border-slate-200 mt-3
-    mx-2 px-4 py-1.5 rounded-full font-medium text-xs 
-    hover:bg-teal-200 hover:text-white transition-all duration-300"
-                    >
-                      Learn More
-                    </Button>
+                    <Button>Learn More</Button>
                   </Link>
                 </div>
               </BackgroundGradient>
