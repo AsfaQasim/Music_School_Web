@@ -1,4 +1,4 @@
-import { main } from "motion/react-client";
+
 import React from "react";
 import HeroSection from "./components/hero_Section";
 import Featured_courses from "./components/featured_courses";
