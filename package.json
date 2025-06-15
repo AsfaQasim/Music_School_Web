@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "clsx": "^2.1.1",
     "motion": "^12.18.1",
     "next": "14.2.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
     "simplex-noise": "^4.0.3",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animated": "^2.0.0",
