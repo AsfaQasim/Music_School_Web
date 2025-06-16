@@ -75,7 +75,7 @@ function MusicSchoolContactUs() {
                               {info.isLink ? (
                                 <a
                                   href={`mailto:${info.content}`}
-                                  className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                  className="text-sm text-black dark:text-black hover:underline"
                                 >
                                   {info.content}
                                 </a>
@@ -142,7 +142,7 @@ function MusicSchoolContactUs() {
 
                   <button
                     type="submit"
-                    className="w-full bg-black hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 hover:scale-[1.02] active:scale-[0.98]"
+                    className="w-full bg-black hover:bg-slate-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 hover:scale-[1.02] active:scale-[0.98]"
                   >
                     Send Message
                   </button>
