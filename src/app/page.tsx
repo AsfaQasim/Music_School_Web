@@ -6,7 +6,7 @@ import MusicSchoolTestimonials from "./components/TestimonialCards";
 import Whyschooseus from "./components/whyschooseus";
 import Upcomingwebinar from "./components/upcomingwebinar";
 import Instructors from "./components/instructors";
-import Footer from "./components/footer";
+
 
 const Home = () => {
   return (
