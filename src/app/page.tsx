@@ -18,7 +18,7 @@ const Home = () => {
       <MusicSchoolTestimonials />
       <Upcomingwebinar />
       <Instructors />
-      <Footer />
+ 
     </main>
   );
 };
